@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> CALCULADORA BASICA </title>
+</head>
+<body>
+<script>
+
+let ope=0
+let opc= prompt("Elige operación \n 1. Suma \n 2. Resta \n 3. Multiplicacion \n 4. Division \n 5. ¿Deseas realizar otra operacion?")
+
+let num1=parseInt (prompt("Dame valor num1"))
+let num2=parseInt (prompt("Dame valor num2"))
+
+switch(opc)
+{
+case "1":
+ope=num1+num2
+break
+case "2":
+ope=num1-num2
+break
+case "3":
+ope=num1*num2
+break
+case "4":
+ope=num1/num2
+break
+case "5":
+ope= document.write("Operacion no disponible: ")
+break
+default:
+document.write("Seleccion no válida ")
+}
+document.write("El resultado es: " + ope + '</br>')
+
+        
+</script>
+</body>
+</html>
