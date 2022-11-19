@@ -1,0 +1,42 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sueldo vendedor</title>
+</head>
+<body>
+<script> 
+//Declara variables
+let sueldo;
+let porcentaje;
+let venta1;
+let venta2;
+let venta3;
+//Solicitar datos
+sueldo = parseFloat(prompt("Escribe tu sueldo"))|| 0;
+venta1 = parseFloat(prompt("Escribe la venta1"))|| 0;
+venta2 = parseFloat(prompt("Escribe la venta2"))|| 0;
+venta3 = parseFloat(prompt("Escribe la venta3"))|| 0;
+//operación
+var ventas = venta1 + venta2 + venta3
+//muestra pantalla
+ if(ventas>=2000){
+ 	var comision = (venta1 +venta2 + venta3) *.20
+ 	var Pagar = sueldo + comision
+ 	document.write("El total a pagar es:" + Pagar + '</br>')
+   }else
+   {
+    if(ventas<2000)
+  {
+   var comision2 = (venta1 +venta2 + venta3) *.10
+ 	var Pagar2 = sueldo + comision2
+   document.write("El total a pagar es:" + Pagar2 + '</br>')
+  }
+  else{
+    
+    }
+   }
+
+</script>
+</body>
+</html>
