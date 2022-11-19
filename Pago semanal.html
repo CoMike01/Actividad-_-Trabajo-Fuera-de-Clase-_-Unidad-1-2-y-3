@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> PAGO SEMANAL </title>
+</head>
+<body>
+<script type="text/javascript">
+//valores
+let base=parseInt(prompt("Dame tu pago base por hora"))
+let horas=parseInt(prompt("Dame las horas trabajadas"))
+//condicional
+if ((horas >= 1)&&(horas<=40))
+{
+ var pagar = horas*base 
+document.write(horas + "-" + "(" + horas + "horas pago normal " + ")" + '</br>' + "Pago a realizar:" +pagar)
+}
+else
+{
+if((horas>=41)&&(horas<=47))
+{ 
+  var extra = horas - 40
+  var pagar2 = (40 * base) + (extra * base * 2)
+document.write(horas +"&nbsp;" + "-" +"&nbsp;" + "(" + "40" + "&nbsp;" + "horas pago normal " + "&nbsp;" + "y"+"&nbsp;" + extra + "&nbsp;" + "horas pago doble" + ")" + '</br>' + "Pago a realizar:" +"&nbsp;" + pagar2)
+}
+else
+{
+  var extra = horas - 40
+  var extra2 = extra - 7
+var pagar3 = (40 * base) + (7 * base * 2) + (extra2 * base *3)
+document.write( horas +"&nbsp;" + "-" +"&nbsp;" + "(" + "40" +"&nbsp;" + "horas pago normal," +"&nbsp;" + "7" +"&nbsp;" + "horas pago doble" +"&nbsp;" + "y" +"&nbsp;" + extra2 +"&nbsp;" + "horas pago triple" + ")" + '</br>' + "Pago a realizar:" + pagar3)
+}
+}
+</script>
+</body>
+</html>
