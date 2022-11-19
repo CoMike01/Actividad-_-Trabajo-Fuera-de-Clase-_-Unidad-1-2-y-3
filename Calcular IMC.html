@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<title>Programa IMC</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		 document.body.style.backgroundColor = 'rgb(135, 206, 250)';
+//Declara variables
+let nombre;
+let edad;
+let peso;
+let altura;
+
+//Solicitar Datos
+nombre = prompt("Escribe tu nombre");
+edad = prompt("Escribe tu edad");
+peso = parseFloat(prompt("Escribe tu peso"))
+altura = parseFloat(prompt("Escribe tu altura"))
+//operación
+var altura2 = altura*altura
+var imc = peso /altura2
+
+//muestra pantalla
+document.write("Tu nombre es: " + nombre +'</br>');
+document.write("Tu edad es: " + edad + '</br>');
+document.write("Tu IMC es:" + imc + '</br>');
+if(imc>25){
+	document.write("Peso Alto, haga dieta y ejercicio" + '</br>')
+}
+else
+{
+  if(imc<22)
+  {
+   document.write("22 Peso Bajo, coma más" + '</br>')
+  }
+  else{
+     document.write("Peso correcto" + '</br>')
+    }
+  }
+	</script>
+</body>
+</html>
