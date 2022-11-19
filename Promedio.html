@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Promedio</title>
+</head>
+<body>
+	<script>
+		//Declara variables
+let calificaciones;
+let califi1;
+let califi2;
+let califi3;
+let califi4;
+let califi5;
+
+//Solicitar Datos
+califi1 = parseInt( prompt("Escribe la primer calificacion"))
+califi2 = parseInt( prompt("Escribe la segunda calificacion"))
+califi3 = parseInt( prompt("Escribe la tercer calificacion"))
+califi4 = parseInt( prompt("Escribe la cuarta calificacion"))
+califi5 = parseInt( prompt("Escribe la quinta calificacion"))
+ // operaciones
+
+var sum = califi1 + califi2 + califi3 + califi4 + califi5
+ var promedio = sum / 5
+//muestra pantalla
+  if(promedio>=6){
+  
+  document.write("Tu promedio es: " + promedio + '</br>' + "Alumno Aprobado" + '</br>');
+   }else
+   {
+    if(promedio<=5)
+  {
+   
+   document.write("Tu promedio es: " + promedio + '</br>' + "Alumno Reprobado" + '</br>');
+  }
+  else{
+    //aqui no va nada
+    }
+   } 
+
+</script>
+</body>
+</html>
