@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> CONVERTIDOR DE UNIDADES </title>
+</head>
+<body>
+<script>
+
+let ope=0
+let opc= prompt("Elige la unidad a la que quiere convertir \n 1. Milimetros \n 2. Centimetros \n 3. Metros \n 4.Kilometros  \n 5.Pies  \n 6. Yardas \n 7.Pulgadas ")
+let num1=parseInt (prompt("Dame valor a convertir en centimetros"))
+
+switch(opc)
+{
+case "1":
+ope=num1*10
+break
+case "2":
+ope=num1
+break
+case "3":
+ope=num1/100
+break
+case "4":
+ope=num1/100000
+break
+case "5":
+ope= num1/30.48
+break
+case "6":
+ope= num1/91.44
+break
+case "7":
+ope= num1/2.54
+break
+default:
+document.write("Seleccion no válida ")
+}
+document.write("El resultado es: " + ope + '</br>')
+</script>
+</body>
+</html>
